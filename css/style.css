@@ -1,0 +1,46 @@
+.sm-up-vertical {
+  margin-top: 40px;
+  width: 100%
+}
+
+
+.my-nav {
+  background: #333;
+}
+
+.my-nav ul {
+  margin: 10px 0;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.col-xs-12 .col-sm-5 .col-md-4 .col-lg-3 {
+  width: 60%;
+}
+
+/*try*/
+.item-info {
+  /*border: 1px solid red; */ /* 排版完要拿掉 */
+  background-color: rgba(255,255,255,.8); /*背景半透明*/
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 25px 10px;
+
+  /* 游標滑過圖片顯示說明文字,作法1-opacity*/
+  /* 游標滑過圖片顯示說明文字,作法2-繼承選擇器 :item display none + hover display block*/
+  /*opacity: 0;*/
+  display: none;
+}
+/*.item-info:hover {
+  opacity: 1;
+}*/
+.my-project:hover .item-info {
+display: block;
+}
